@@ -1,0 +1,15 @@
+{
+  "name": "instaprint",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "kaaro",
+  "license": "MIT",
+  "dependencies": {
+    "print-js": "^1.0.63",
+    "printer": "^0.4.0"
+  }
+}
