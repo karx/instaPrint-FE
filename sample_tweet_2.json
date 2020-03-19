@@ -1,0 +1,25 @@
+{
+  "hashtags": [
+    {
+      "indices": [
+        16,
+        34
+      ],
+      "text": "instaprintmytweet"
+    }
+  ],
+  "symbols": [],
+  "urls": [],
+  "user_mentions": [
+    {
+      "id": 1144249501647069200,
+      "id_str": "1144249501647069185",
+      "indices": [
+        3,
+        14
+      ],
+      "name": "kaaroClips",
+      "screen_name": "ClipsKaaro"
+    }
+  ]
+}
