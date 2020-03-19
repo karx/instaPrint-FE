@@ -241,3 +241,11 @@ function printPdf() {
     console.log(color);
     document.getElementById(tweetId).style.borderColor = color;
   }
+
+  //TODO: 
+  // print.js does not seem to have callback functions onSuccess or on the error.
+  // the thing is not handling multiple request at all. let alone gracefully
+  // * Need to fix the callback and then update to firebase after handling
+  // * Incoming Request Cooldown before prining. Like a 10 sec countdown when it shows up, then prints.
+  // * Add User Input options to fasttrack/cancel Incoming request
+  
