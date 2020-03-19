@@ -204,6 +204,8 @@ function printPdf() {
     })
   }
 
+  
+
   function printExternalImages() {
     printJS({
       printable: [
@@ -215,4 +217,27 @@ function printPdf() {
       showModal: true,
       modalMessage: 'Printing...'
     })
+  }
+
+  async function printTweet(tweetId) {
+    if (!!tweetId) {
+        let val = await printJS({
+            printable: [
+              tweetId
+            ],
+            type: 'html',
+            // showModal: true,
+            modalMessage: 'Printing...',
+            onPrintDialogClose: updateUIGreen(tweetId),
+            onError: (e) => updateUIGreen(tweetId, 'red')
+          });
+          console.log('val: ',val);
+    } else {
+        console.log('Empty Tweet link');
+    }
+  }
+
+  function updateUIGreen(tweetId, color = 'green') {
+    console.log(color);
+    document.getElementById(tweetId).style.borderColor = color;
   }
