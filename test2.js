@@ -228,7 +228,7 @@ function printPdf() {
             type: 'html',
             // showModal: true,
             modalMessage: 'Printing...',
-            onPrintDialogClose: updateUIGreen(tweetId),
+            onPrintDialogClose: updateUIGreen(tweetId, 'blue'),
             onError: (e) => updateUIGreen(tweetId, 'red')
           });
           console.log('val: ',val);
@@ -237,7 +237,7 @@ function printPdf() {
     }
   }
 
-  function updateUIGreen(tweetId, color = 'green') {
+  function updateUIGreen(tweetId, color = 'blue') {
     console.log(color);
     document.getElementById(tweetId).style.borderColor = color;
   }

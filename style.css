@@ -15,6 +15,9 @@
     padding: 3px;
     border: thick double #32a1ce;
 }
+.completed {
+    border-color: chartreuse;
+}
 .tweet_image {
 	float: left;
 	width: 48px;
